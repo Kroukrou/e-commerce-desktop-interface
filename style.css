@@ -33,11 +33,7 @@ body a:hover {
 *                                                                                               *
 *                                                                                               *
 ***********************************************************************************************/
-@media screen and (min-width: 0px) and (max-width: 432px) {
-  ul {
-    display: none;
-  }
-}
+
 header {
   background-image: url('images/main-bg.jpg');
   background-size: cover;
@@ -731,7 +727,7 @@ footer #be__informed {
   transform: translateX(-8%);
 }
 footer #be__informed p:not(form p) {
-  font-size: 50%;
+  font-size: smaller;
   width: 50%;
   padding-bottom: 0.7em;
   border-bottom: 0.1em solid #05f;
