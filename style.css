@@ -33,7 +33,6 @@ body a:hover {
 *                                                                                               *
 *                                                                                               *
 ***********************************************************************************************/
-
 header {
   background-image: url('images/main-bg.jpg');
   background-size: cover;
@@ -724,10 +723,10 @@ footer #get__in__touch__with__us ul img {
 }
 footer #be__informed {
   width: 11em;
-  transform: translateX(-8%);
+  transform: translate(-8%, 1%);
 }
 footer #be__informed p:not(form p) {
-  font-size: smaller;
+  font-size: 80%;
   width: 50%;
   padding-bottom: 0.7em;
   border-bottom: 0.1em solid #05f;
@@ -770,8 +769,8 @@ footer #be__informed form button {
 }
 footer #be__informed form p {
   padding-top: 5em;
-  width: 30em;
-  font-size: 55%;
+  width: 27em;
+  font-size: xx-small;
   color: #505050;
 }
 #copyright p {
