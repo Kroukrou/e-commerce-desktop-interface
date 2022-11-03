@@ -178,7 +178,7 @@ body a:hover{
     
       }
 
-       & ul{
+       & ul, #ul{
 
         display: flex;
         justify-content: space-between;
@@ -238,6 +238,19 @@ body a:hover{
 
         & li:last-child{
 
+    
+            & img{
+
+                width: 20em;
+                height: 15em;
+                transform: translateX(-20%);
+
+            }
+
+        }
+
+        & #headphone_beats{
+
             & img{
 
                 width: 20em;
@@ -261,6 +274,7 @@ body a:hover{
         align-items: center;
         transform: translateX(-10%);
        
+       
 
    
          
@@ -268,6 +282,7 @@ body a:hover{
     & ul:nth-last-of-type(2){
 
         color: rgb(132, 123, 123);
+        
 
         & li{
 
@@ -276,14 +291,12 @@ body a:hover{
 
         }
 
-      
-       
-       
-
     }
+    
     & ul:nth-last-of-type(2) li:last-child{
 
         color: @title-color;
+       
     
        
 
@@ -292,6 +305,7 @@ body a:hover{
     & ul:last-child:not(nav ul){
 
         color: @mainFont-color;  
+       
         
         & li{
 
