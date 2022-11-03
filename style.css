@@ -13,7 +13,8 @@ body {
   padding: 0;
   font-family: Verdana;
 }
-body ul {
+body ul,
+body ol {
   list-style-type: none;
 }
 body a {
@@ -116,24 +117,24 @@ header ul {
   display: flex;
   justify-content: space-between;
 }
-header ul div {
+header ul #div {
   width: 100%;
   transform: translate(10%, 15%);
 }
-header ul div li {
+header ul #div li {
   font-weight: none;
   color: #505050;
   font-size: smaller;
 }
-header ul div li:nth-child(2),
-header ul div li:nth-child(3) {
+header ul #div li:nth-child(2),
+header ul #div li:nth-child(3) {
   position: relative;
   top: 0.8em;
 }
-header ul div li span {
+header ul #div li span {
   font-weight: bold;
 }
-header ul div li a {
+header ul #div li a {
   color: #f5f5f5;
   background-color: #05f;
   border-radius: 6%/14%;
@@ -395,18 +396,20 @@ main section:nth-of-type(3) #limited {
   background-color: rgba(0, 0, 0, 0.6);
   height: 20em;
 }
-main section:nth-of-type(3) #limited span {
+main section:nth-of-type(3) #limited span:not(#span) {
   position: relative;
   top: 1em;
 }
 main section:nth-of-type(3) #limited h2 {
   font-weight: 100;
   transform: translateY(20%);
+  display: flex;
+  flex-direction: column;
 }
-main section:nth-of-type(3) #limited h2 span img {
+main section:nth-of-type(3) #limited h2 span:not(#span) img {
   width: 18%;
   position: relative;
-  top: -1em;
+  top: -0.5em;
 }
 main section:nth-of-type(3) #limited #counter {
   display: flex;
@@ -423,7 +426,7 @@ main section:nth-of-type(3) #limited #counter div p {
   padding: 0.5em;
   text-align: center;
 }
-main section:nth-of-type(3) div:first-child span:not(span:last-child) {
+main section:nth-of-type(3) div:first-child span:not(span:last-child, #span) {
   background-color: #f44336;
   border-radius: 5%/18%;
   padding: 0.5em;
